@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#loginbtn").click(function () {
+                let email = $("#email").val();
+                let pass = $("#password").val();
+                if (email === "" || pass === "") {
+                    alert("Please fill all fields.");
+                }
+                else {
+                alert("Email Address: " + email + "\n" + "Password: " + pass);
+            }
+            });
+ 
+            $("#unhide").click(function () {
+                let cur = $("#password").attr("type");
+                if (cur === "password") {
+                    $("#password").attr("type", "text");
+                }
+                else {
+                    $("#password").attr("type", "password");
+                }
+                
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid px-2">
+        <div class="loginbox">
+            <h1 class="text-center pt-2 pb-2 text-white">LOGIN</h1>
+            <form>
+                <div class="form-group">
+                    <div class="form-group w-75 m-auto mt-5">
+                        <input type="text" class="form-control text-center" id="email" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <br>
+                    <div class="input-group w-75 m-auto mt-4">
+                        <input class="form-control text-center pl-5" id="password" placeholder="PASSWORD" type="password">
+                        <span class="input-group-append bg-white rounded-right">
+                            <button class="btn" type="button" id="unhide"><i class="far fa-eye"></i></button>
+                        </span>
+                    
+                    </div>
+                    <br>
+                    <div class="ml-3 mt-2 mb-4">
+                        <input type="checkbox" class="ml-4 form-check-input" id="remember">
+                        <label class="form-check-label text-white ml-5" for="rememberme">Remember me</label>
+                        <a href="#" class="font-weight-light text-white ml-4" id="signup">Forgot password?</a>
+                    </div> 
+                    <div class="col text-center mt-3 mb-4">
+                        <button type="button" class="btn btn-light" id="loginbtn">LOGIN</button>
+                    </div>
+                    <div class="col text-center">
+                        <a href="signup.html" class="font-weight-light text-white" id="signup">CREATE AN ACCOUNT</a>
+                    </div>
+
+                    
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

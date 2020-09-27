@@ -1,0 +1,61 @@
+
+
+.loginbox{
+
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 400px;
+    height: auto;
+}
+
+.signupbox{
+
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 400px;
+  max-width: 400px;
+  height: auto;
+}
+body{
+
+  background: rgb(31,35,38) no-repeat center center fixed;
+  background: linear-gradient(0deg, rgba(31,35,38,1) 0%, rgba(203,139,125,1) 100%) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#forgot:link {
+  text-decoration: none;
+}
+#forgot:visited {
+  text-decoration: none;
+}
+#forgot:hover {
+  text-decoration: none;
+}
+
+#forgot:active {
+  text-decoration: none;
+}
+
+#signup:link {
+  text-decoration: none;
+}
+#signup:visited {
+  text-decoration: none;
+}
+#signup:hover {
+  text-decoration: none;
+}
+
+#signup:active {
+  text-decoration: none;
+}
